@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Flex</title>
+    <style>
+        .container1{
+            display: flex;
+            gap: 20px;
+            
+        }
+        .box{
+            border: 2px solid goldenrod;
+            padding: 10px;
+            background-color: bisque;
+           
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            border: 2px solid green;
+            background-color: rgb(221, 154, 106);
+        }
+        @media screen and (max-width: 576px) {
+            .container1{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+     <div class="container1">
+        <h1>Flexible Flex</h1>
+     <div class="box">
+        <h3>First</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo illum voluptas a dolores incidunt modi iusto nostrum doloribus quae. Asperiores deserunt ducimus aliquid animi deleniti, voluptas minima ad explicabo cumque.</p>
+     </div>
+     <div class="box">
+        <h3>Second</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus recusandae distinctio praesentium provident corporis autem dolorum et repudiandae dolorem error doloribus, ipsa ut, minus labore dolores deleniti deserunt accusantium tempora.</p>
+     </div>
+     </div>
+     <div class="container2">
+        <div class="item">item - 1</div>
+        <div class="item">item - 2</div>
+        <div class="item">item - 3</div>
+        <div class="item">item - 4</div>
+        <div class="item">item - 5</div>
+        <div class="item">item - 6</div>
+        <div class="item">item - 7</div>
+        <div class="item">item - 8</div>
+        <div class="item">item - 9</div>
+        <div class="item">item - 10</div>
+     </div>
+</body>
+</html>
